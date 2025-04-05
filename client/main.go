@@ -9,7 +9,7 @@ import (
 func main() {
 	utils.ConfigurarLogger()
 
-	log.Println("Hola soy un log")  // log. funciones de log
+	//log.Println("Hola soy un log")  // log. funciones de log
 
 	// loggear "Hola soy un log" usando la biblioteca log
 	globals.ClientConfig = utils.IniciarConfiguracion("config.json")
@@ -32,7 +32,7 @@ func main() {
 	utils.EnviarMensaje(globals.ClientConfig.Ip, globals.ClientConfig.Puerto,globals.ClientConfig.Mensaje)
 
 	// leer de la consola el mensaje
-	utils.LeerConsola()
+	//utils.LeerConsola()
 
 	// generamos un paquete y lo enviamos al servidor
 	utils.GenerarYEnviarPaquete()
